@@ -4,7 +4,7 @@ const dotenv = require('dotenv').config();
 async function storeTask(request, response) {
  
 // recuperando fromulario
-    const params = array(
+    const params = Array(
         request.body.nome,
         request.body.senha
     );
