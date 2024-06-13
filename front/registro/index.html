@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 
 </head>
-<body>
-    <h1 class="h1 ">Registro</h1>
+
+<!-- MUDAR OS NOME PARA EMAIL -->
+
+
+<body class="corpo">
+    <h1 class="h1 ">RECYCLENET</h1>
  
     <form action="#" class="registro1" >
-        <label for="fname">NOME:</label><br>
-        <input type="text" id="nome" name="nome"><br>
+        <label for="fname" class="email_escrito">EMAIL:</label><br>
+        <input type="text" id="email" name="nome" class="texto_nome"><br>
  
-        <label for="lname">SENHA:</label><br>
-        <input type="password" id="senha" name="senha"><br><br>
+        <label for="lname" class="senha_escrito">SENHA:</label><br>
+        <input type="password" id="senha" name="senha" class="texto_senha"><br><br>
  
-        <button id="handleSubmit">Enviar</button>
+        <button id="handleSubmit" class="botao1">Registrar</button>
         
     </form> 
+
 </body>
 </html>
