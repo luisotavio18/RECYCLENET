@@ -10,11 +10,10 @@ button.onclick= async function() {
         headers: {"Content-type": "application/json; charset=UTF-8"},
         body: JSON.stringify(data)
 });
- 
+
     let content = await response.json();
- 
+    
     if(content.sucess){
-        window.location('../pagina/index.html');
         alert("Sucesso")
     }else{
         alert("Não")

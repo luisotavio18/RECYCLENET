@@ -8,9 +8,8 @@ async function storeTask(request, response) {
         request.body.nome,
         request.body.senha
     );
- 
 const query = "insert into cadastro(nome, senha) Values(?,?)";
- 
+
 connection.query(query, params, (err, results) => {
     if(results) {
         response
