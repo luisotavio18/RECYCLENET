@@ -1,6 +1,11 @@
 let button = document.getElementById("handleSubmit");
- 
+
+function Navegar(){
+    window.location.href = '../mapas/pagina_inicial.html'
+}
+
 button.onclick= async function() {
+    
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
     let data = {email, senha}
@@ -20,3 +25,4 @@ button.onclick= async function() {
         alert("Não")
     }
 }
+

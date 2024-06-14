@@ -8,7 +8,7 @@ async function storeTask(request, response) {
         request.body.email,
         request.body.senha
     );
-const query = "insert into cadastro(email, senha) Values(?,?)";
+const query = "insert into usuarios(email, senha) Values(?,?)";
 
 connection.query(query, params, (err, results) => {
     if(results) {

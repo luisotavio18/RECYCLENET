@@ -1,5 +1,5 @@
 let button = document.getElementById("botao2");
-let button1 = document.getElementById("botao1")
+let button_documentacao = document.getElementById("botao1")
 
 button.addEventListener('click', function(){
 
@@ -16,7 +16,7 @@ button.addEventListener('click', function(){
 
 })
 
-button1.addEventListener('click', function(){
+button_documentacao.addEventListener('click', function(){
 
     alert("Fica instituído o Plano Operacional de Coleta de Lixo Domiciliar e Coleta Seletiva na zona urbana do Município, tendo como objetivo o aprimoramento das normas de disposição, coleta, transporte e destino final do resíduo ou lixo domiciliar e recicláveis");
     alert("Não são caracterizados como resíduos ou lixo domiciliar, para efeito deste regulamento e desta forma não poderão ser recolhidos pelos órgãos de Limpeza Pública da Prefeitura, os resíduos sólidos industriais, resíduos sólidos especiais, resíduos de serviços de saúde e resíduos sólidos perigosos")
