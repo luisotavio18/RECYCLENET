@@ -5,10 +5,10 @@ async function storeTask(request, response) {
  
 // recuperando fromulario
     const params = Array(
-        request.body.nome,
+        request.body.email,
         request.body.senha
     );
-const query = "insert into cadastro(nome, senha) Values(?,?)";
+const query = "insert into cadastro(email, senha) Values(?,?)";
 
 connection.query(query, params, (err, results) => {
     if(results) {

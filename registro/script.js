@@ -1,9 +1,9 @@
 let button = document.getElementById("handleSubmit");
  
 button.onclick= async function() {
-    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
-    let data = {nome, senha}
+    let data = {email, senha}
  
     const response = await fetch('http://localhost:3003/api/store/post', {
         method: "POST",
@@ -14,10 +14,9 @@ button.onclick= async function() {
     let content = await response.json();
     
     if(content.sucess){
+        window.location("./mapa/index.html")
         alert("Sucesso")
     }else{
         alert("Não")
     }
-
-
 }

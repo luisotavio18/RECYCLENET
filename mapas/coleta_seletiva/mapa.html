@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="PT-BR" class="htmlq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <style>
+        #map { 
+            height: 630px;
+            width: 100%;
+        }
+        .body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .html {
+            height: 100%;
+            margin: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000; /* Para garantir que o botão esteja sempre acima do mapa */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .top-content {
+            background-color: #95e256;
+            font-family: "Open Sans", sans-serif;
+            opacity: 0.5;
+            padding: 1px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+
+     
+</head>
+<body class="body">
+
+    <div id="map"></div>
+
+    <div class="top-content">
+        <h1>RECYCLENET</h1>
+    </div>
+
+    <button class="custom-button" id="botao_info">Horários Geral</button>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
