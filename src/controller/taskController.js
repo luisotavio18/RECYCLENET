@@ -11,6 +11,7 @@ async function storeTask(request, response) {
 const query = "insert into cadastro(email, senha) Values(?,?)";
 
 connection.query(query, params, (err, results) => {
+    console.log(err, results);
     if(results) {
         response
         .status(201)
