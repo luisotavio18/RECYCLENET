@@ -1,6 +1,5 @@
-function Navegar(){
-    window.location.href = '../mapas/pagina_inicial.html'
-}
+document.addEventListener("DOMContentLoaded", displayEmail);
+
 
 async function handleSubmit(event) {
     event.preventDefault();
@@ -16,7 +15,7 @@ async function handleSubmit(event) {
         body: JSON.stringify(data)
     });
 
-    let content = await response.json();
+    let content = await response.json();   
     
     if(content.success){
         window.location.href = "../mapas/pagina_inicial.html";
