@@ -1,0 +1,44 @@
+[
+    {
+        "lat": -29.757733066884942,
+        "lng": -51.09839226209659,
+        "title": "Feitoria Seller",
+        "description": "FREQUENCIA: Quinta-feira <br> HORÁRIO: das 8h às 17h30 <br> <br> INFORMAÇÕES ADICIONAIS: Feitoria Seller sentido -> Integração"
+    },
+    {
+        "lat": -29.77414719456732,
+        "lng": -51.150947275623295,
+        "title": "Centro e Fião",
+        "description": "FREQUENCIA: Segundo à sabado <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.76638870966359,
+        "lng": -51.145615017891515,
+        "title": "Rua Independência",
+        "description": "FREQUENCIA: Sexta-feira <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.779957697665118,
+        "lng": -51.1397671895036,
+        "title": "Morro do Espelho",
+        "description": "FREQUENCIA: Segunda-feira <br>HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.767563199241575,
+        "lng": -51.13544963998137,
+        "title": "São José",
+        "description": "FREQUENCIA: Sexta-feira <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.773298513426983,
+        "lng": -51.16367441799755,
+        "title": "Vincentina",
+        "description": "FREQUENCIA: Quinta-feira <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.76666091013486,
+        "lng": -51.1465783594642,
+        "title": "Centro e Fião",
+        "description": "FREQUENCIA: Segundo à sabado <br> HORÁRIO: das 8h às 17h30"
+    }
+]
