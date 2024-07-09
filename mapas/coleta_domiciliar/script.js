@@ -1,8 +1,8 @@
-
 let button = document.getElementById("botao_info")
 
+
 button.addEventListener('click', function(){
-    alert('COLETA SELETIVA: \nHorário: das 8h às 17h30')
+    alert('COLETA SELETIVA: \nSeg, qua e sex, Início às 19 horas')
 })
 
 

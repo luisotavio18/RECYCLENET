@@ -1,5 +1,11 @@
+/* CRIAÇAÕ DE VARIÁVEIS */
+
 let button = document.getElementById("botao2");
 let button_documentacao = document.getElementById("botao1")
+let button2 = document.getElementById("botao3");
+
+
+/* BOTAO PRA IR PRO MAPA SELETIVA*/
 
 button.addEventListener('click', function(){
 
@@ -15,6 +21,24 @@ button.addEventListener('click', function(){
     }  
 
 })
+
+/* BOTAO PRA IR PRO MAPA DOMICILIAR */
+
+button2.addEventListener('click', function() {
+    let resultado = confirm("Ao prosseguir você aceita que leu a documentação: ");
+
+    if (resultado) {
+        console.log("Usuário escolheu 'OK'");
+    
+        window.location.href = ("./coleta_domiciliar/mapa.html")
+
+    } else {
+        console.log("Usuário escolheu 'Cancelar'");
+    }  
+
+})
+
+/* BOTAO DA DOCUMENTAÇ]AO */
 
 button_documentacao.addEventListener('click', function(){
 
