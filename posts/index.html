@@ -10,23 +10,30 @@
     <link rel="icon" href="../assets/logo.png" type="image/png">
 </head>
 <body>
-    
+
+  
+
+  </div>
+  <button id="voltar">voltar</button>
     <main>
         
     <section class="welcome-section">
 
-        <p>RECYCLENET - Postagens</p>
-        <button id="voltar">voltar</button>
+      
+        
+        <img src="../assets/logo_menor_semfundo.png" alt="">
         <hr>
       
     </section>
   
       <!-- Post -->
 
+      
+
       <div class="post">
         <h2>Post 1</h2>
         <p>Conteúdo do post. Aqui você pode adicionar parágrafos, imagens, links, etc.</p>
-        <img src="../assets/logo.png" alt="Descrição da imagem">
+        <img src="../img_lixo/OIP.png" alt="Descrição da imagem">
       </div>
       
   
@@ -34,34 +41,24 @@
       <div class="post">
         <h2>Post 2</h2>
         <p>Conteúdo do outro post. Pode ser tão longo quanto necessário.</p>
-        <img src="../assets/logo.png" alt="Descrição da imagem">
+        <img src="../img_lixo/th.png" alt="Descrição da imagem">
       </div>
+
+      
     
     </main>
 
-    <div id="formContainer" class="form-container" style="display: none;">
-        <button id="closeFormButton" class="close-button">&times;</button>
-        <form>
-          <h2>Novo post</h2>
-        
-          <label for="name">Título:</label>
-          <input type="text" id="titulo" name="name" required>
-        
-          <label for="message">Mensagem: (300*)</label>
-          <textarea id="mensagem" name="message" rows="4" required></textarea>
     
-          <button type="submit" onclick="postar(event)">Enviar</button>
-        
-        </form>
-      </div>
+    
 
     <style>
     html, body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0;
         padding: 0;
         height: 100%;
         user-select: none;
-        background-color: #4d9f09;
+        background-color: #60b41c;
         margin: 0;
         padding: 0;
         min-height: 100vh;
@@ -81,7 +78,7 @@
             color: #7BFB3F;
     }
     .post {
-    background-color: #33b70b;
+    background-color: #9b9b9b;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 10px;
@@ -158,6 +155,10 @@
 
     </style>
     
+
+    
+
+  
 
     <script src="script.js"></script>
 
