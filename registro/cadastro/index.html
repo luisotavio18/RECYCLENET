@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECYCLENET - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../../assets/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+
+    
+</head>
+<body class="corpo">
+    <h1 class="h1">RECYCLENET</h1>
+    <form action="#" class="registro1">
+        
+        <label for="email" class="email_escrito">EMAIL:</label><br>
+        <input type="text" id="email" name="email1" class="texto_email"><br>
+        <label for="senha" class="senha_escrito">SENHA:</label><br>
+        <input type="password" id="senha" name="senha1" class="texto_senha" maxlength="15"><br><br>
+
+        <button onclick="cadastrar(event)" class="botao1">Registrar</button>
+    </form>
+</body>
+
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Remove a barra de rolagem */
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .corpo {
+        user-select: none;
+        background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 10rem;
+        text-align: center;
+        color: #7BFB3F;
+        margin: 0;
+    }
+
+    .registro1 {
+        text-align: center;
+    }
+
+    .email_escrito, .senha_escrito {
+        font-weight: bold;
+    }
+
+    .texto_email, .texto_senha {
+        width: 250px;
+        background-color: transparent;
+        border-radius: 8px;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+
+    .texto_email:focus, .texto_senha:focus {
+        border-color: #36b106;
+    }
+
+    .botao1 {
+        width: 100px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .botao1:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+
+</html>

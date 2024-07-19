@@ -9,7 +9,7 @@ async function storePost(request, response) {
     let query = "insert into post(titulo, mensagem) Values(?,?)";
 
     connection.query(query, params, (err, results) => {
-        console.log(err, results);
+        console.log(err, results);a
     if(results) {
         response
         .status(201)

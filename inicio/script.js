@@ -22,7 +22,7 @@ button.addEventListener('click', function(){
     if (resultado) {
         console.log("Usuário escolheu 'OK'");
     
-        window.location.href = ("./coleta_seletiva/mapa.html")
+        window.location.href = ("../mapas/coleta_seletiva/mapa.html")
 
     } else {
         console.log("Usuário escolheu 'Cancelar'");
@@ -38,7 +38,7 @@ button2.addEventListener('click', function() {
     if (resultado) {
         console.log("Usuário escolheu 'OK'");
     
-        window.location.href = ("./coleta_domiciliar/mapa.html")
+        window.location.href = ("../mapas/coleta_domiciliar/mapa.html")
 
     } else {
         console.log("Usuário escolheu 'Cancelar'");
