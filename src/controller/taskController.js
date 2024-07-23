@@ -1,7 +1,7 @@
 const connection = require('../config/db');
 const dotenv = require('dotenv').config();
  
-async function storeTask(request, response) {
+async function storeLogin(request, response) {
  
 // recuperando fromulario
     const params = Array(
@@ -33,5 +33,5 @@ connection.query(query, params, (err, results) => {
 }
  
 module.exports = {
-    storeTask
+    storeLogin
 }
