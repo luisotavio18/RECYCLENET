@@ -1,19 +1,3 @@
-let buttonVoltar = document.getElementById('voltar')
-
-buttonVoltar.addEventListener('click', function() {
-    window.location.href = "../inicio/pagina_inicial.html";
-})
-
-document.getElementById('showFormButton').addEventListener('click', function() {
-    document.getElementById('formContainer').style.display = 'block';
-});
-document.getElementById('showFormButton').addEventListener('click', function() {
-    document.getElementById('formContainer').style.display = 'block';
-});
-document.getElementById('closeFormButton').addEventListener('click', function() {
-    document.getElementById('formContainer').style.display = 'none';
-});
-
 async function postar(event) {
   event.preventDefault();
   
@@ -37,3 +21,19 @@ async function postar(event) {
       alert("Não")
   }
 }
+
+let buttonVoltar = document.getElementById('voltar')
+
+buttonVoltar.addEventListener('click', function() {
+    window.location.href = "../inicio/pagina_inicial.html";
+})
+
+document.getElementById('showFormButton').addEventListener('click', function() {
+    document.getElementById('formContainer').style.display = 'block';
+});
+document.getElementById('showFormButton').addEventListener('click', function() {
+    document.getElementById('formContainer').style.display = 'block';
+});
+document.getElementById('closeFormButton').addEventListener('click', function() {
+    document.getElementById('formContainer').style.display = 'none';
+});
