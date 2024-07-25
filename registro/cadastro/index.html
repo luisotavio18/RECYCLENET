@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECYCLENET - Login</title>
+    <title>RECYCLENET - Cadastro</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +12,27 @@
     <link rel="icon" href="../../assets/logo.png" type="image/png">
 
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-
-    
 </head>
 <body class="corpo">
-    <h1 class="h1">RECYCLENET</h1>
+    <section class="welcome-section">
+        <img src="../../assets/logo_menor_semfundo.png" alt="">
+    </section>
+
+    <p>Crie sua conta</p>
+
     <form action="#" class="registro1">
-        
         <label for="email" class="email_escrito">EMAIL:</label><br>
         <input type="text" id="email" name="email1" class="texto_email"><br>
         <label for="senha" class="senha_escrito">SENHA:</label><br>
         <input type="password" id="senha" name="senha1" class="texto_senha" maxlength="15"><br><br>
 
         <button onclick="cadastrar(event)" class="botao1">Registrar</button>
+        <BR>
+        <button onclick="login(event)" class="botao2">Já tenho uma conta</button>
     </form>
 </body>
 
+<script src="./script.js"></script>
 
 <style>
     body, html {
@@ -61,6 +65,10 @@
         text-align: center;
     }
 
+    .welcome-section {  
+        text-align: center;
+    }
+
     .email_escrito, .senha_escrito {
         font-weight: bold;
     }
@@ -77,17 +85,18 @@
         border-color: #36b106;
     }
 
-    .botao1 {
-        width: 100px;
+    .botao1, .botao2 {
+        width: 150px;
         border-radius: 5px;
         font-size: 16px;
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 10px;
     }
 
-    .botao1:hover {
+    .botao1:hover, .botao2:hover {
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     }
+
+    
 </style>
-
-
 </html>

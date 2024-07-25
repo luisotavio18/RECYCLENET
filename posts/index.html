@@ -14,10 +14,14 @@
   
 
   </div>
-  <button id="voltar"><--</button>
+  <button id="voltar">Início</button>
     
   <main>
       
+    <a href="../perfil/index.html">
+      <img class="perfil" src="../assets/perfil.png" alt="">
+  </a>
+
     <section class="welcome-section">
 
         <img src="../assets/comunidade.png" alt="">
@@ -42,7 +46,7 @@
     <div id="formContainer" class="form-container">
     <button id="closeFormButton" class="close-button">&times;</button>
     <form id="postForm">
-      <h2>Novo post</h2>
+      <h2>Conte nos o que tem reciclando</h2>
     
       <label for="name">Título:</label>
       <input type="text" id="titulo" name="name" required>
@@ -64,7 +68,7 @@
         padding: 0;
         height: 100%;
         user-select: none;
-        background-color: #60b41c;
+        background: linear-gradient(to right, #60b41c, #285e06);
         margin: 0;
         padding: 0;
         min-height: 100vh;
@@ -83,8 +87,16 @@
         font-family: "Open Sans", sans-serif;
             color: #7BFB3F;
     }
+
+    .perfil{
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      height: 50px;
+    }
+
     .post {
-    background-color: #9b9b9b;
+      background: linear-gradient(to right, #a88a8a, #857a7a);
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 10px;

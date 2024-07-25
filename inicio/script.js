@@ -3,7 +3,7 @@
 let button = document.getElementById("botao2");
 let button_documentacao = document.getElementById("botao1")
 let button2 = document.getElementById("botao3");
-let button4 = document.getElementById('botao4')
+let button4 = document.getElementById('botao4');
 
 
 /* BOTAO PARA IR AOS POSTS */

@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", displayEmail);
 
+// BOTAO " JÁ TENHO CONTA "
+
+function login(event) {
+    event.preventDefault();
+    window.location.href = "../login/index.html";
+    console.log('Redirecionando para login...');
+}
+
+// API
 
 async function cadastrar(event) {
     event.preventDefault();
@@ -18,7 +27,7 @@ async function cadastrar(event) {
     let content = await response.json();   
     
     if(content.success){
-        window.location.href = "../../inicio/pagina_inicial.html";
+        window.location.href = "../login/index.html";
         alert("Sucesso")
     }else{
         alert("Não")

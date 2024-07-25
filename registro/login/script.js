@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", displayEmail);
 
+// BOTAO " NÃO POSSUO CONTA "
+
+function login(event) {
+    event.preventDefault();
+    window.location.href = "../cadastro/index.html";
+    console.log('Redirecionando para login...');
+}
 
 async function handleSubmit(event) {
     event.preventDefault();
