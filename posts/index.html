@@ -1,197 +1,59 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECYCLENET</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RECYCLENET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="../assets/logo.png" type="image/png">
 </head>
-<body>
 
-  
-
-  </div>
+<body>  
   <button id="voltar">Início</button>
-    
+
   <main>
-      
     <a href="../perfil/index.html">
       <img class="perfil" src="../assets/perfil.png" alt="">
-  </a>
+    </a>
 
     <section class="welcome-section">
-
-        <img src="../assets/comunidade.png" alt="">
-        <hr>
-
+      <img src="../assets/comunidade.png" alt="">
+      <hr>
     </section>
 
     <div id="postsContainer"></div>
 
-  
+    <!-- Post -->
+    <div id="posts"></div>
+    <!-- <div class="post">
+      <h2>Post 1</h2>
+      <p>Conteúdo do post. Aqui você pode adicionar parágrafos, imagens, links, etc.</p>
+      <img src="../img_lixo/OIP.png" alt="Descrição da imagem">
+    </div> -->
+  </main>
 
-      <!-- Post -->
-      <div class="post">
-        <h2>Post 1</h2>
-        <p>Conteúdo do post. Aqui você pode adicionar parágrafos, imagens, links, etc.</p>
-        <img src="../img_lixo/OIP.png" alt="Descrição da imagem">
-      </div>
-      
-    
-    </main>
-
-    <div id="formContainer" class="form-container">
+  <div id="formContainer" class="form-container">
     <button id="closeFormButton" class="close-button">&times;</button>
     <form id="postForm">
       <h2>Conte nos o que tem reciclando</h2>
-    
+
       <label for="name">Título:</label>
       <input type="text" id="titulo" name="name" required>
-    
+
       <label for="message">Mensagem: (300*)</label>
       <textarea id="mensagem" name="message" rows="4" required></textarea>
 
       <button type="submit" onclick="postar(event)">Enviar</button>
-    
+
     </form>
   </div>
 
   <button class="floating-btn" id="showFormButton">+</button>
 
-    <style>
-    html, body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        user-select: none;
-        background: linear-gradient(to right, #60b41c, #285e06);
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-    }
-    .container {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        height: 10vh; /* Define a altura do contêiner como 100% da altura da viewport */
-    }
-    
-    .h1{
-        font-size: 1000%;
-        text-align: center;
-        font-family: "Open Sans", sans-serif;
-            color: #7BFB3F;
-    }
-
-    .perfil{
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      height: 50px;
-    }
-
-    .post {
-      background: linear-gradient(to right, #a88a8a, #857a7a);
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 10px;
-      margin-bottom: 100vh; /* Espaçamento entre os posts */
-      text-align: center; /* Centraliza o conteúdo do post */
-      max-width: 450px; /* Largura máxima do post */
-      margin: 10px auto; /* Centraliza o post na página */
-  }
-  .post h2 {
-    font-size: 24px;
-      margin-bottom: 10px;
-      color: #333;
-  }
-  .post p {
-    line-height: 1.6;
-      color: #000000;
-  }
-  .post img{
-    max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-      display: block; /* Garante que a imagem seja exibida como bloco para centralização */
-      margin: 0 auto; /* Centraliza horizontalmente */
-      object-fit: cover; /* Faz com que a imagem cubra todo o espaço do contêiner */
-  }
-  .welcome-section {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .form-container {
-    position: fixed;
-    top: 50px;
-    right: 0;
-    width: 300px;
-    background-color: rgba(62, 143, 30, 0.9);
-    padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    display: none; /* Oculta o formulário inicialmente */
-  }
-
-  .form-container h2 {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  .form-container label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-
-  .form-container input,
-  .form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .form-container button {
-    background-color: #12dda0;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 4px;
-  }
-
-  .form-container button:hover {
-    background-color: #0bb783;
-  }
-  .floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #12dda0;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 20%;
-    font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    z-index: 1000; /* Para garantir que o botão fique sobre outros elementos */
-  }
-  
-  .floating-btn:hover {
-    background-color: #0bb783;
-  }
-
-    </style>
-    
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

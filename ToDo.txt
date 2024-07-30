@@ -1,0 +1,9 @@
+1 - Fazer os posts funcionarem com imagem
+
+2 - Fazer o login 
+
+3 - Fazer ele ter sessão iniciada
+
+4 - Parte do perfil que tem o status
+
+5 - Colocar o resto dos marcadores em ambos mapas
