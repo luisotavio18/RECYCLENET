@@ -19,6 +19,7 @@ async function getPosts() {
         });
 
     } else {
+
         alert("get erro")
     }
 }
