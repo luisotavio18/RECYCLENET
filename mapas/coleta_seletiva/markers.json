@@ -3,7 +3,13 @@
         "lat": -29.757733066884942,
         "lng": -51.09839226209659,
         "title": "Feitoria Seller",
-        "description": "FREQUENCIA: Quinta-feira <br> HORÁRIO: das 8h às 17h30 <br> <br> INFORMAÇÕES ADICIONAIS: Feitoria Seller sentido -> Integração"
+        "description": "FREQUENCIA: Quarta-feira <br> HORÁRIO: das 8h às 17h30 <br> <br> INFORMAÇÕES ADICIONAIS: Feitoria Seller sentido -> Integração"
+    },
+    {
+        "lat": -29.753500826222467,
+        "lng": -51.097813375362065,
+        "title": "Feitoria Seller",
+        "description": "FREQUENCIA: Segunda-feira <br> HORÁRIO: das 8h às 17h30 <br> <br> INFORMAÇÕES ADICIONAIS: Feitoria Seller sentido -> Centro"
     },
     {
         "lat": -29.77414719456732,
@@ -42,6 +48,27 @@
         "description": "FREQUENCIA: Segundo à sabado <br> HORÁRIO: das 8h às 17h30"
     },
     {
-
+        "lat": -29.732197463976792,
+        "lng": -51.15873992555035,
+        "title": "Parque Sinuelo (associação)",
+        "description": "FREQUENCIA: Sexta-feira <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.740230595129884,
+        "lng": -51.15726479343899,
+        "title": "Vila Glória (Associação Moradores)",
+        "description": "FREQUENCIA: Sexta-feira <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.78361296886311,
+        "lng": -51.14400926265164,
+        "title": "Padre Reus (Em frente a igreja)",
+        "description": "FREQUENCIA: Sexta-feira <br> HORÁRIO: Manhã e Tarde"
+    },
+    {
+        "lat": -29.74014291511583,
+        "lng": -51.14089067018847,
+        "title": "Padre Reus (Em frente a igreja)",
+        "description": "FREQUENCIA: Terça-feira <br> HORÁRIO: Manhã e Tarde"
     }
 ]   
