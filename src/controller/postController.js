@@ -4,9 +4,10 @@ const dotenv = require('dotenv').config();
 async function storePost(request, response) {
     let params = Array(
         request.body.titulo,
-        request.body.mensagem
+        request.body.mensagem,
+        request.file.filename
     )
-    let query = "insert into post(titulo, mensagem) Values(?,?)";
+    let query = "insert into post(titulo, mensagem, file) Values(?,?,?)";
 
     connection.query(query, params, (err, results) => {
         console.log(err, results);

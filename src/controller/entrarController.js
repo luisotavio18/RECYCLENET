@@ -2,8 +2,11 @@ const connection = require('../config/db');
 const dotenv = require('dotenv').config();
 
 async function entrarPost(request, response) {
+    let params = Array(
+        request.body.email
+    )
     
-    let query = "select * from cadastro where email = ;";
+    let query = "select * from cadastro where email = ?;";
 
     connection.query(query, (err, results) => {
         console.log(err, results);
@@ -28,5 +31,5 @@ async function entrarPost(request, response) {
 }
 
 module.exports = {
-    storePost
+    entrarPost
 }
