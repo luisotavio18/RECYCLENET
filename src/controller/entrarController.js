@@ -6,9 +6,11 @@ async function entrarPost(request, response) {
         request.body.email
     )
     
+    console.log(params)
+
     let query = "select * from cadastro where email = ?;";
 
-    connection.query(query, (err, results) => {
+    connection.query(query, params, (err, results) => {
         console.log(err, results);
     if(results) {
         response

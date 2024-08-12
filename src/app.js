@@ -4,7 +4,7 @@ const cors = require('cors');
 const router = require('./routes/taskRouter');
 const postRouters = require('./routes/postRouter');
 const dadosRouters = require('./routes/dadosRouter');
-const entrarRouter = require('./routes/entrarRouter.js');
+const entrarRouter = require('./routes/entrarRouter');
 const app = express();
 
 app.set('port', process.env.PORT || 3005);
