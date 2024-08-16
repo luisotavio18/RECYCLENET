@@ -111,10 +111,6 @@ body {
     border-radius: 4px;
 }
 
-.form-container close-button {
-    background-color:
-}
-
 .form-container button {
     background-color: #415750;
     color: white;
@@ -148,3 +144,49 @@ body {
 .floating-btn:hover {
     background-color: #0bb783;
 }
+
+.buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #7BFB3F;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #16A085;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #7BFB3F;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #16A085;
+        }
