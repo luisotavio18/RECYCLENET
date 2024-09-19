@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #60b41c, #285e06);
+}
+.corpo {
+    background: linear-gradient(to right, #60b41c, #285e06);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.welcome-section img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.content li {
+    margin-bottom: 10px;
+}
+#voltar {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+#voltar:hover {
+    background-color: #2980b9;
+}

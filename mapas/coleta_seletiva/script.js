@@ -2,7 +2,7 @@ let button = document.getElementById("botao_info")
 let button2 = document.getElementById("botao_documento")
 
 button.addEventListener('click', function () {
-    alert('COLETA SELETIVA: \nHorário: das 8h às 17h30')
+    alert('COLETA SELETIVA: \nCentro e Fião - Horário: das 8h às 17h30')
 })
 
 button2.addEventListener('click', function() {
