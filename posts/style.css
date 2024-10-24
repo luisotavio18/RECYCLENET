@@ -111,6 +111,22 @@ body {
     border-radius: 4px;
 }
 
+#voltar{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+
+#voltar:hover {
+    background-color: #2980b9;
+}
+
 .form-container button {
     background-color: #415750;
     color: white;

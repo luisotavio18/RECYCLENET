@@ -1,4 +1,4 @@
-1 - Fazer os posts funcionarem com imagem
+1 - Fazer os posts funcionarem com imagem - Feito (JPG)
 
 2 - Fazer o login - Feito
 
@@ -8,4 +8,4 @@
 
 5 - Colocar o resto dos marcadores em ambos mapas
 
-6 - Colocar informações sobre reciclagem no site
+6 - Colocar informações sobre reciclagem no site - Feito

@@ -24,7 +24,7 @@ async function cadastrar(event) {
         body: JSON.stringify(data)
     });
 
-    let content = await response.json();   
+    let content = await response.json();    
     
     if(content.success){
         window.location.href = "../login/index.html";

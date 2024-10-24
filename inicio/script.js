@@ -4,12 +4,19 @@ let button = document.getElementById("botao2");
 let button_documentacao = document.getElementById("botao1")
 let button2 = document.getElementById("botao3");
 let button4 = document.getElementById('botao4');
+let button5 = document.getElementById('botao5');
 
 
 /* BOTAO PARA IR AOS POSTS */
 
 button4.addEventListener('click', function () {
     window.location.href = "../posts/index.html";
+})
+
+/* BOTAO DE INFORMAÇÕES */
+
+button5.addEventListener('click', function () {
+    window.location.href = "../informacoes/index.html";
 })
 
 
