@@ -1,0 +1,10 @@
+    #map {
+        width: 300px;  /* Largura do mapa */
+        height: 300px; /* Altura do mapa */
+        position: fixed; /* Posição fixa para manter o mapa no canto */
+        bottom: 20px; /* Distância do fundo */
+        right: 20px; /* Distância da lateral direita */
+        z-index: 1000; /* Para garantir que o mapa esteja visível acima de outros elementos */
+        border: 2px solid #16A085; /* Borda opcional */
+        border-radius: 10px; /* Bordas arredondadas, opcional */
+    }

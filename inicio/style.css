@@ -3,20 +3,8 @@ html,
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
-            /* Evita a barra de rolagem */
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            /* Centraliza horizontalmente */
-            align-items: center;
-            /* Centraliza verticalmente */
-            height: 50vh;
-            /* Define a altura do contêiner */
+            background-color: #179e46;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .welcome-section {
@@ -26,18 +14,10 @@ html,
 
         .corpo {
             user-select: none;
-            background-color: #F4D03F;
-            background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+            background-color: #179e46;
             margin: 0;
             padding: 0;
             min-height: 100vh;
-        }
-
-        .h1 {
-            font-size: 5rem;
-            text-align: center;
-            font-family: "Open Sans", sans-serif;
-            color: #7BFB3F;
         }
 
         .perfil {
@@ -47,9 +27,229 @@ html,
             height: 50px;
         }
 
-        h4 {
-            margin: 1rem 0;
+        hr {
+            width: 0;
+            height: 3px;
+            background-color: #58D68D;
+            border: none;
+            transition: width 1s ease;
+        }
+
+        .welcome-section:hover hr {
+            width: 100%;
+        }
+        
+        .maps-row {
+            display: flex;
+            justify-content: space-around; /* Espaçamento entre os mapas */
+            margin: 20px 0; /* Margem superior e inferior */
+        }
+
+        #mapSel, #mapDom {
+            width: 460px;  
+            height: 400px; 
+            border: 2px solid #16A085; 
+            border-radius: 10px; 
+        }
+
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(113, 75, 75, 0.2);
+        }
+        
+
+        .h1sel, .h1dom {
+            font-size: 1.5rem;
+            margin: 10px 0;
             font-family: "Open Sans", sans-serif;
+            color: #333; 
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #050a0f;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0; /* Espaçamento acima e abaixo do botão */
+        }
+
+        .buttonPost {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #58D68D; /* Cor de fundo do botão */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff; /* Cor do texto */
+            transition: background-color 0.3s;
+        }
+
+        .buttonPost:hover {
+            background-color: #45b572; /* Cor ao passar o mouse */
+        }
+        
+.post {
+    background: linear-gradient(to right, #a88a8a, #857a7a);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 100vh;
+    /* Espaçamento entre os posts */
+    text-align: center;
+    /* Centraliza o conteúdo do post */
+    max-width: 450px;
+    /* Largura máxima do post */
+    margin: 10px auto;
+    /* Centraliza o post na página */
+}
+
+.post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post p {
+    line-height: 1.6;
+    color: #000000;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    /* Garante que a imagem seja exibida como bloco para centralização */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    object-fit: cover;
+    /* Faz com que a imagem cubra todo o espaço do contêiner */
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-container {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    background-color: rgba(184, 185, 183, 0.9);
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    /* Oculta o formulário inicialmente */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #415750;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-container button:hover {
+    background-color: #0bb783;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #12dda0;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20%;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    /* Para garantir que o botão fique sobre outros elementos */
+}
+
+.floating-btn:hover {
+    background-color: #0bb783;
+}
+
+.buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #7BFB3F;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #16A085;
         }
 
         .buttons {
@@ -73,4 +273,14 @@ html,
 
         button:hover {
             background-color: #16A085;
+        }
+        .container {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+            /* Centraliza verticalmente */
+            height: 10vh;
+            /* Define a altura do contêiner como 100% da altura da viewport */
         }

@@ -1,0 +1,51 @@
+[
+    {
+        "lat": -29.76666091013486,
+        "lng": -51.1465783594642,
+        "title": "Centro e Fião",
+        "description": "FREQUENCIA: Segundo à sabado <br> HORÁRIO: das 8h às 17h30"
+    },
+    {
+        "lat": -29.76359243623849,
+        "lng": -51.14894634175782,
+        "title": "São Miguel (da Rua Osvaldo Aranha em diante)",
+        "description": "FREQUENCIA: Seg, Qua, e Sex <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.7796088000443,
+        "lng": -51.157608241652184,
+        "title": "Av Getúlio Vargas até a Av Thomas Edson",
+        "description": "FREQUENCIA: Seg, Qua, e Sex <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.773360306798835,
+        "lng": -51.16187940916284,
+        "title": "Rua Arno Schuch até a Rua Almerinda G. Fidelis",
+        "description": "FREQUENCIA: Seg, Qua, e Sex <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.766860454651354,
+        "lng": -51.144619007448206,
+        "title": "Rua Marques do Herval",
+        "description": "FREQUENCIA: Seg <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.768589227201485,
+        "lng": -51.146086204457376,
+        "title": "Rua Primeiro de Março",
+        "description": "FREQUENCIA: Seg <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.766437166996155,
+        "lng": -51.14568071273372,
+        "title": "Rua Independência",
+        "description": "FREQUENCIA: Seg <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.736894756214678,
+        "lng": -51.14613808561641,
+        "title": "R. Quinze de Novembro, Vila Brás - Santos Dumont",
+        "description": "FREQUENCIA: Seg <br> HORÁRIO: Inicio -> 7h "
+    }
+    
+]

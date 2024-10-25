@@ -4,42 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RECYCLENET: A plataforma para promover a reciclagem e a coleta seletiva.">
     <title>RECYCLENET</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="../assets/logo.png" type="image/png">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 
 </head>
 
-<body class="corpo">
-
+<body>
     <a href="../perfil/index.html">
-        <img class="perfil" src="../assets/perfil.png" alt="">
+        <img class="perfil" src="../assets/perfil.png" alt="Perfil do usuário">
     </a>
 
     <section class="welcome-section">
-
-        <img src="../assets/logo_menor_semfundo.png" alt="">
+        <img src="../assets/logo_menor_semfundo.png" alt="Logo da RECYCLENET">
         <hr>
-
     </section>
 
-    <h4 id="email"></h4>
-
-    <div class="container">
-        <h4>Seja bem-vindo ao RecycleNet</span></h4>
-        <div class="buttons">
-            <button id="botao1">Documentação</button>
-            <button id="botao2">Coleta Seletiva</button>
-            <button id="botao3">Coleta Domiciliar</button>
-            <button id="botao4">Posts</button>
+    <div class="maps-row">
+        <div class="map-container">
+            <h1>Coleta Seletiva</h1>
+            <div id="mapSel"></div>
+        </div>
+        <div class="map-container">
+            <h1>Coleta Domiciliar</h1>
+            <div id="mapDom"></div>
         </div>
     </div>
 
+    <h1>O que você precisa saber?</h1>
+    <h2>Para um melhor aproveitamento da reciclagem</h2>
+
+    <div class="content">
+        <h3>As Melhores Formas de Reciclar</h3>
+        <ul>
+            <li><strong>Separe os resíduos:</strong> Divida os materiais recicláveis em categorias como papel, plástico, vidro e metal.</li>
+            <li><strong>Limpe os recicláveis:</strong> Lave e seque os itens antes de colocá-los na lixeira de reciclagem para evitar contaminação.</li>
+            <li><strong>Verifique as regras locais:</strong> Cada cidade pode ter regras diferentes sobre o que pode ser reciclado.</li>
+            <li><strong>Evite contaminantes:</strong> Não coloque itens não recicláveis como sacolas plásticas, comida e outros resíduos misturados com recicláveis.</li>
+        </ul>
+        <h3>Os Hábitos para Melhorar a Reciclagem</h3>
+        <ul>
+            <li><strong>Reduza o consumo:</strong> Compre produtos com menos embalagens e opte por itens reutilizáveis.</li>
+            <li><strong>Eduque a família e amigos:</strong> Compartilhe informações sobre a importância da reciclagem e como fazer corretamente.</li>
+            <li><strong>Participe de programas comunitários:</strong> Engaje-se em iniciativas locais de reciclagem e eventos de coleta.</li>
+            <li><strong>Reutilize materiais:</strong> Dê uma nova vida a itens antigos antes de descartá-los.</li>
+        </ul>
+    </div>
+
+    <h1>Veja oque estão reciclando ultimamente</h1>
+
+    <div id="postsContainer"></div>
+
+    <div id="posts"></div>
+    
+
+  <div id="formContainer" class="form-container">
+    <button id="closeFormButton" class="close-button">&times;</button>
+    <form id="postForm">
+      <h2>Conte nos o que tem reciclando</h2>
+
+      <label for="name">Título:</label>
+      <input type="text" id="titulo" name="name" required>
+
+      <label for="message">Assunto: </label>
+      <textarea id="mensagem" name="message" rows="4" required></textarea>
+
+      <label for="file">Imagem: </label>
+      <input type="file" id="file" name="file">
+
+      <button type="submit" onclick="postar(event)">Enviar</button>
+
+    </form>
+  </div>
+
+  <button class="floating-btn" id="showFormButton">+</button>
+
+    <div style="height: 50px;"></div>
+
+    <script src="apiPosts.js"></script>
     <script src="script.js"></script>
+    <script src="./mapaSel/script.js"></script>
+    <script src="./mapaDom/script.js"></script>
 </body>
 
 </html>

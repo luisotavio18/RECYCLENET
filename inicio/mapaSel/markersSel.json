@@ -68,7 +68,13 @@
     {
         "lat": -29.74014291511583,
         "lng": -51.14089067018847,
-        "title": "Padre Reus (Em frente a igreja)",
+        "title": "Vila Brás, Santos Dumont ",
+        "description": "FREQUENCIA: Terça-feira <br> HORÁRIO: Manhã e Tarde"
+    },
+    {
+        "lat": -29.764718147531145,
+        "lng": -51.10176866831333,
+        "title": "Vila Jardim Cora",
         "description": "FREQUENCIA: Terça-feira <br> HORÁRIO: Manhã e Tarde"
     }
-]   
+]  
