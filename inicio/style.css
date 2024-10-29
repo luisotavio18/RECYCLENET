@@ -3,7 +3,7 @@ html,
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #179e46;
+            background-color: #97B1A6;
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -45,6 +45,8 @@ html,
             margin: 20px 0; /* Margem superior e inferior */
         }
 
+        
+
         #mapSel, #mapDom {
             width: 460px;  
             height: 400px; 
@@ -53,12 +55,11 @@ html,
         }
 
         .map-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(113, 75, 75, 0.2);
-        }
-        
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            background-color: #698996;
+        }        
+
 
         .h1sel, .h1dom {
             font-size: 1.5rem;
@@ -99,6 +100,8 @@ html,
             margin-bottom: 10px;
         }
 
+        
+
         .button-container {
             display: flex;
             justify-content: center;
@@ -121,7 +124,7 @@ html,
         }
         
 .post {
-    background: linear-gradient(to right, #a88a8a, #857a7a);
+    background: #C9C5BA;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -164,6 +167,7 @@ html,
 }
 
 .form-container {
+    
     position: fixed;
     top: 50px;
     right: 0;
