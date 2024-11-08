@@ -17,6 +17,9 @@ async function handleSubmit(event) {
     });
 
     let content = await response.json();
+    console.log(content);
+    //localStorage.setItem('dadosUser', content.data)
+    //let dados = localStorage.getItem('dadosUser')
 
     if (content.success) {
         window.location.href = "../../inicio/pagina_inicial.html";
