@@ -124,11 +124,11 @@ html,
         }
         
 .post {
-    background: #C9C5BA;
-    border-radius: 8px;
+    background: #8d8d8b;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin-bottom: 100vh;
+    margin-bottom: 0px;
     /* Espaçamento entre os posts */
     text-align: center;
     /* Centraliza o conteúdo do post */

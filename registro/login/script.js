@@ -17,13 +17,15 @@ async function handleSubmit(event) {
     });
 
     let content = await response.json();
-    console.log(content);
-    //localStorage.setItem('dadosUser', content.data)
-    //let dados = localStorage.getItem('dadosUser')
-
-    if (content.success) {
-        window.location.href = "../../inicio/pagina_inicial.html";
-        alert("Sucesso")
+    
+    console.log(content)
+    
+    if (content.data[0]) {
+        localStorage.setItem('data_criacao', content.data[0].created_at)
+        if(data.email == content.data[0].email && data.senha == content.data[0].senha){
+            alert("Sucesso")
+            window.location.href = "../../inicio/pagina_inicial.html";
+        }
     } else {
         alert("Não")
     }

@@ -3,12 +3,13 @@ const dotenv = require('dotenv').config();
 
 async function entrarPost(request, response) {
     let params = Array(
-        request.body.email
+        request.body.email,
+        request.body.senha
     )
     
     console.log(params)
 
-    let query = "select * from cadastro where email = ?;";
+    let query = "select * from cadastro where email = ? and senha = ?;";
 
     connection.query(query, params, (err, results) => {
         console.log(err, results);

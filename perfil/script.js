@@ -27,6 +27,8 @@ async function mostrarNome() {
 
 mostrarNome();
 */
+let data = localStorage.getItem("data_criacao")
+document.getElementById("exibeData").innerText = `Data da criação da conta: ${data}`;
 
 let buttonVoltar = document.getElementById('voltar')
 
