@@ -14,9 +14,9 @@ async function getPosts() {
 
         content1.data.map(post => {
             let img = post.file
-                 ? " <img src=" + images + post.file + " alt='img' height='500' width='500'/> "
-                 : ""
-
+                ? " <img src=" + images + post.file + " alt='img' height='500' width='500'/> "
+                : "";
+        
             postHtml.innerHTML += "<div class='post'> " +
                 " <h2>" + post.titulo + "</h2>" +
                 " <p>" + post.mensagem + "</p> " +
@@ -52,7 +52,13 @@ async function postar(event) {
 
     if (content.success) {
         alert("Sucesso")
+        
         getPosts();
+        
+        let contador = localStorage.getItem('contadorSubmit') || 0;
+        contador = parseInt(contador) + 1;
+        localStorage.setItem('contadorSubmit', contador);
+        
     } else {
         alert("Não")
     }
@@ -66,11 +72,11 @@ async function postar(event) {
 
 
 document.getElementById('showFormButton').addEventListener('click', function () {
-    document.getElementById('formContainer').style.display = 'block';
-});
-document.getElementById('showFormButton').addEventListener('click', function () {
-    document.getElementById('formContainer').style.display = 'block';
-});
-document.getElementById('closeFormButton').addEventListener('click', function () {
-    document.getElementById('formContainer').style.display = 'none';
+    const formContainer = document.getElementById('formContainer');
+    // Verifica o estado atual e alterna entre mostrar e esconder
+    if (formContainer.style.display === 'block') {
+        formContainer.style.display = 'none';
+    } else {
+        formContainer.style.display = 'block';
+    }
 });

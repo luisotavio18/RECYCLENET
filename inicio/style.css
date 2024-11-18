@@ -5,6 +5,7 @@ html,
             height: 100%;
             background-color: #97B1A6;
             font-family: 'Open Sans', sans-serif;
+            
         }
 
         .welcome-section {
@@ -12,6 +13,22 @@ html,
             text-align: center;
         }
 
+        .perfil-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Espaço entre a imagem e o texto */
+            left: 10px;
+            margin-top: 20px;
+        }
+        
+        .perfil-texto {
+            font-size: 14px; /* Tamanho da fonte */
+            color: #000; /* Cor do texto */
+            text-decoration: none;
+        }
+
+        
         .corpo {
             user-select: none;
             background-color: #179e46;
@@ -161,73 +178,97 @@ html,
     /* Faz com que a imagem cubra todo o espaço do contêiner */
 }
 
-
 .form-container {
-    
     position: fixed;
-    top: 50px;
-    right: 0;
-    width: 300px;
-    background-color: rgba(184, 185, 183, 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #f9f9f9; /* Fundo claro para contraste */
+    border-radius: 12px; /* Cantos arredondados */
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
     z-index: 1000;
-    display: none;
-    /* Oculta o formulário inicialmente */
+    display: none; /* Oculta o formulário inicialmente */
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .form-container h2 {
     margin-top: 0;
     text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .form-container label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
 }
 
 .form-container input,
 .form-container textarea {
     width: 100%;
-    padding: 1px;
-    margin-bottom: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #16A085;
+    box-shadow: 0 0 8px rgba(22, 168, 133, 0.5); /* Efeito de foco */
 }
 
 .form-container button {
-    background-color: #415750;
+    background-color: #16A085;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-container button:hover {
-    background-color: #0bb783;
+    background-color: #13a37d;
+    transform: scale(1.05); /* Efeito de "zoom" ao passar o mouse */
 }
 
-.floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #12dda0;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 20%;
-    font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    z-index: 1000;
-    /* Para garantir que o botão fique sobre outros elementos */
+.form-container button:active {
+    transform: scale(0.98); /* Efeito de "pressionado" ao clicar */
 }
 
-.floating-btn:hover {
-    background-color: #0bb783;
+.add-button {
+    position: fixed; /* Fixa o botão na posição mesmo ao rolar a página */
+    bottom: 20px; /* Define a distância do botão em relação à parte inferior */
+    right: 20px; /* Define a distância do botão em relação à borda direita */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do ícone "+" */
+    border: none; /* Remove borda */
+    font-size: 24px; /* Ajusta o tamanho do ícone "+" */
+    padding: 10px 15px; /* Define espaçamento interno */
+    border-radius: 50%; /* Botão circular */
+    cursor: pointer; /* Cursor de "mãozinha" */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos */
 }
+
+.add-button:hover {
+    background-color: #218838; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Amplia ligeiramente o botão */
+}
+
 
 .buttons {
             display: flex;

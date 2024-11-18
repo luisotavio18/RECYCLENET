@@ -8,7 +8,7 @@ body, html {
 
 .corpo {
     user-select: none;
-    background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    background-color: #97B1A6;
     display: flex;
     flex-direction: column;
     justify-content: center;

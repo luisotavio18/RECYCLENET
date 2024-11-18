@@ -46,6 +46,23 @@
         "lng": -51.14613808561641,
         "title": "R. Quinze de Novembro, Vila Brás - Santos Dumont",
         "description": "FREQUENCIA: Seg <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.759618887943425,
+        "lng": -51.092302900057526,
+        "title": "Gastão, Feitoria Seller (até Rua Albino Tim e Rua Niger)",
+        "description": "FREQUENCIA: Ter, Qui, Sab <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.74860948474061,
+        "lng": -51.09694291389251,
+        "title": "Feitoria Madezzati",
+        "description": "FREQUENCIA: Ter, Qui, Sab <br> HORÁRIO: Inicio -> 7h "
+    },
+    {
+        "lat": -29.748905032998653,
+        "lng": -51.144771836601386,
+        "title": "Vila Dos Toco",
+        "description": "FREQUENCIA: Seg, Qua, Sex <br> HORÁRIO: Inicio -> 7h "
     }
-    
 ]
