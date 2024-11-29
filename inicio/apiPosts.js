@@ -1,10 +1,8 @@
 async function getPosts() {
     const images = 'http://localhost:3005/uploads/';
-
     const response1 = await fetch('http://localhost:3005/api/dados', {
         method: "GET",
         headers: { "Content-type": "application/json; charset=UTF-8" },
-
     });
 
     let content1 = await response1.json();
@@ -16,19 +14,23 @@ async function getPosts() {
             let img = post.file
                 ? " <img src=" + images + post.file + " alt='img' height='500' width='500'/> "
                 : "";
-        
+            
+            
+            const email = localStorage.getItem('email');
+
             postHtml.innerHTML += "<div class='post'> " +
                 " <h2>" + post.titulo + "</h2>" +
                 " <p>" + post.mensagem + "</p> " +
                 img +
+                " <p><strong>Postado por:</strong> " + email + "</p>" + 
                 " </div> ";
         });
 
     } else {
-
-        alert("get erro")
+        alert("Erro ao carregar os posts");
     }
 }
+
 
 getPosts();
 
