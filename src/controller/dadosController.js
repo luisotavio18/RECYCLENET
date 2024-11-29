@@ -2,7 +2,7 @@ const connection = require('../config/db');
 const dotenv = require('dotenv').config();
 
 async function getDados(request, response) {
-    let query = "select id,titulo,mensagem,file from post";
+    let query = "select id,titulo,mensagem,userEmail,file from post";
 
     connection.query(query, (err, results) => {
         console.log(err, results);

@@ -15,14 +15,12 @@ async function getPosts() {
                 ? " <img src=" + images + post.file + " alt='img' height='500' width='500'/> "
                 : "";
             
-            
-            const email = localStorage.getItem('email');
 
             postHtml.innerHTML += "<div class='post'> " +
                 " <h2>" + post.titulo + "</h2>" +
                 " <p>" + post.mensagem + "</p> " +
                 img +
-                " <p><strong>Postado por:</strong> " + email + "</p>" + 
+                " <p><strong>Postado por:</strong>" + post.userEmail + "</p>" + 
                 " </div> ";
         });
 
@@ -31,19 +29,18 @@ async function getPosts() {
     }
 }
 
-
 getPosts();
 
 async function postar(event) {
     event.preventDefault();
 
     const formData = new FormData();
+    const userEmail = localStorage.getItem('email')
 
     formData.append('titulo', document.getElementById("titulo").value)
     formData.append('mensagem', document.getElementById("mensagem").value)
+    formData.append('email', userEmail)
     formData.append('file', document.getElementById("file").files[0])
-    
-    console.log(formData.get("mensagem"));
 
     const response = await fetch('http://localhost:3005/api/store/post', {
         method: "POST",
